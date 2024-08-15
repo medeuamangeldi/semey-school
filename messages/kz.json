@@ -1,0 +1,15 @@
+{
+  "ROUTES": {
+    "MISSION": "Борыш",
+    "ABOUT_SCHOOL": "Мектеп туралы",
+    "LIBRARY": "Кітапхана",
+    "FOR_GRADS": "Түлектерге",
+    "CONTACTS": "Байланыс"
+  },
+  "BUTTONS": {
+    "BOOK_A_TOUR": "Экскурсияға жазылу"
+  },
+  "PROS": {
+    "TITLE": "АРТЫҚШЫЛЫҚТАР"
+  }
+}
