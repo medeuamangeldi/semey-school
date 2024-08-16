@@ -1,0 +1,64 @@
+.proforientation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 0 12px;
+  &-title {
+    &-fixed {
+      position: relative;
+      color: white;
+      font-size: 87px;
+      font-weight: 900;
+      /* We need double the stroke width because half of it gets covered up */
+      -webkit-text-stroke: 4px #7e1322;
+    }
+    /* Place the second copy of the text over top of the first */
+    &-fixed span {
+      position: absolute;
+      left: 0;
+      -webkit-text-stroke: 0;
+      pointer-events: none;
+    }
+  }
+  &-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-height: 620;
+    width: 100%;
+    gap: 50px;
+    &-images {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      gap: 35px;
+      &-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-text {
+      font-size: 28px;
+      text-align: left;
+    }
+  }
+  &-content {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 861px;
+    width: 100%;
+  }
+}

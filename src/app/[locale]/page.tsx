@@ -4,6 +4,9 @@ import Image from "next/image";
 import { useLocale } from "next-intl";
 import Pros from "./_components/Pros/pros.components";
 import { ParallaxProvider } from "react-scroll-parallax";
+import Whyus from "./_components/Whyus/whyus.component";
+import Proforientation from "./_components/Proforientation/proforientation.component";
+import Photogallery from "./_components/Photogallery/photogallery.component";
 export default function Home() {
   const locale = useLocale();
   const handleBoardByLocale = () => {
@@ -22,6 +25,9 @@ export default function Home() {
       <ParallaxProvider>
         <Pros />
       </ParallaxProvider>
+      <Whyus />
+      <Proforientation />
+      <Photogallery />
     </main>
   );
 }

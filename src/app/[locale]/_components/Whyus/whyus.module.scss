@@ -1,0 +1,39 @@
+.whyus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+
+  &-title {
+    &-fixed {
+      width: 100%;
+      text-align: right;
+      padding-right: 40px;
+      position: relative;
+      color: white;
+      font-size: 87px;
+      font-weight: 900;
+      /* We need double the stroke width because half of it gets covered up */
+      -webkit-text-stroke: 4px #7e1322;
+    }
+    /* Place the second copy of the text over top of the first */
+    &-fixed span {
+      width: 100%;
+      padding-right: 40px;
+      text-align: right;
+      position: absolute;
+      left: 0;
+      -webkit-text-stroke: 0;
+      pointer-events: none;
+    }
+  }
+  &-content {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: contain;
+    height: 548px;
+    width: 100%;
+  }
+}
