@@ -6,16 +6,16 @@ import { useParallax } from "react-scroll-parallax";
 const Pros = () => {
   const tPros = useTranslations("PROS");
   const parallax: any = useParallax({
-    rotate: [180, 360],
+    rotate: [270, 360],
   });
   const parallaxTwo: any = useParallax({
-    rotate: [180, 360],
+    rotate: [270, 360],
   });
   const parallaxThree: any = useParallax({
-    rotate: [180, 360],
+    rotate: [270, 360],
   });
   const parallaxFour: any = useParallax({
-    rotate: [180, 360],
+    rotate: [270, 360],
   });
   const handleProsItem = ({
     image,
