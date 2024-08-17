@@ -19,6 +19,11 @@ const Proforientation = () => {
               alt="Proforientation"
               width={379}
               height={612}
+              layout="responsive"
+              style={{
+                maxHeight: "612px",
+                maxWidth: "379px",
+              }}
             />
           </div>
           <div className={styles["proforientation-row-images-column"]}>
@@ -27,12 +32,22 @@ const Proforientation = () => {
               alt="Proforientation"
               width={261}
               height={288}
+              layout="responsive"
+              style={{
+                maxHeight: "288px",
+                maxWidth: "261px",
+              }}
             />
             <Image
               src="/prof3.svg"
               alt="Proforientation"
               width={261}
               height={288}
+              layout="responsive"
+              style={{
+                maxHeight: "288px",
+                maxWidth: "261px",
+              }}
             />
           </div>
         </div>
@@ -52,13 +67,19 @@ const Proforientation = () => {
           {tProforientation("TEXT.4")}
         </div>
       </div>
-      <div
-        className={styles["proforientation-content"]}
-        style={{
-          backgroundImage: `url(/proforientation-${locale}.svg)`,
-          cursor: "pointer",
-        }}
-      ></div>
+      <div className={styles["proforientation-content"]}>
+        <Image
+          src={`/proforientation-${locale}.svg`}
+          alt="Proforientation"
+          width={1679}
+          height={861}
+          layout="responsive"
+          style={{
+            maxHeight: "861px",
+            maxWidth: "1679px",
+          }}
+        />
+      </div>
     </div>
   );
 };

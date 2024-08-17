@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname, useRouter } from "@/navigation";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
+import SimpleMap from "../Map/map.component";
 
 const Menu = ({ children }: any) => {
   const locale = useLocale();
@@ -14,6 +15,7 @@ const Menu = ({ children }: any) => {
   const searchParams = useSearchParams();
   const tRoutes = useTranslations("ROUTES");
   const tButtons = useTranslations("BUTTONS");
+  const tFooter = useTranslations("FOOTER");
 
   const handleLocaleChange = (localeCode: any) => {
     router.replace(
@@ -97,6 +99,35 @@ const Menu = ({ children }: any) => {
         </div>
       </div>
       {children}
+      <div className={styles["footer"]}>
+        <div className={styles["footer-map"]}>
+          <SimpleMap />
+        </div>
+        <div className={styles["footer-contacts"]}>
+          <div className={styles["footer-contacts-title"]}>
+            {tFooter("TITLE")}
+          </div>
+          <div className={styles["footer-contacts-content"]}>
+            <div>
+              {tFooter("ADDRESS")}
+              <br />
+              <br />
+              {tFooter("HOURS")}
+              <br />
+              <br />
+              {tFooter("PHONE")}
+            </div>
+            <div className={styles["footer-contacts-content-buttons"]}>
+              <div className={styles["footer-contacts-content-buttons-button"]}>
+                {tButtons("BOOK_A_TOUR")}
+              </div>
+              <div className={styles["footer-contacts-content-buttons-button"]}>
+                {tFooter("2GIS")}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

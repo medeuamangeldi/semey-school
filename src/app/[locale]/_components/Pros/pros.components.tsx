@@ -67,21 +67,35 @@ const Pros = () => {
             {paragraph}
           </span>
         </div>
-        <div
-          className={styles["pros-container-content-text-left-content"]}
-          style={{
-            backgroundImage: `url(${image})`,
-          }}
-        ></div>
+        <div className={styles["pros-container-content-text-left-content"]}>
+          <Image
+            src={image}
+            alt="pros"
+            width={856}
+            height={548}
+            layout="responsive"
+            style={{
+              maxHeight: "548px",
+              maxWidth: "856px",
+            }}
+          />
+        </div>
       </div>
     ) : (
       <div className={styles["pros-container-content-text-right"]}>
-        <div
-          className={styles["pros-container-content-text-right-content"]}
-          style={{
-            backgroundImage: `url(${image})`,
-          }}
-        ></div>
+        <div className={styles["pros-container-content-text-right-content"]}>
+          <Image
+            src={image}
+            alt="pros"
+            width={856}
+            height={548}
+            layout="responsive"
+            style={{
+              maxHeight: "548px",
+              maxWidth: "856px",
+            }}
+          />
+        </div>
         <div className={styles["pros-container-content-text-right-text"]}>
           <span
             className={styles["pros-container-content-text-right-text-main"]}
@@ -129,17 +143,16 @@ const Pros = () => {
           <Image
             src="/pencil.svg"
             alt="pencil"
-            width={120}
-            height={120}
+            width={100}
+            height={100}
             ref={parallax.ref}
           />
         </div>
         {handleProsItem({
           image: "/pros1.jpg",
-          mainText: "ПОВЫСЬТЕ СВОЙ АКАДЕМИЧЕСКИЙ",
-          mainTextSub: "ПОТЕНЦИАЛ",
-          paragraph:
-            "Талантливые учителя, высокие академические стандарты и развитие лидерских навыков в смешанной среде - это отличительные черты образования в Semey New School",
+          mainText: tPros("TEXT.0.MAIN"),
+          mainTextSub: tPros("TEXT.0.SUB"),
+          paragraph: tPros("TEXT.0.PARAGRAPH"),
           isLeft: true,
           color: "#7E1322",
         })}
@@ -147,17 +160,16 @@ const Pros = () => {
           <Image
             src="/portfolio.svg"
             alt="portfolio"
-            width={120}
-            height={120}
+            width={100}
+            height={100}
             ref={parallaxTwo.ref}
           />
         </div>
         {handleProsItem({
           image: "/pros2.jpg",
-          mainText: "ВЕДУЩИЙ",
-          mainTextSub: "ПРЕПОДАВАТЕЛЬСКИЙ СОСТАВ",
-          paragraph:
-            "Преподаватели SNS разнообразны и являются лидерами в своей области - и приверженцами миссии школы сделать позитивное различие в мире",
+          mainText: tPros("TEXT.1.MAIN"),
+          mainTextSub: tPros("TEXT.1.SUB"),
+          paragraph: tPros("TEXT.1.PARAGRAPH"),
           isLeft: false,
           color: "#1A1C49",
         })}
@@ -165,17 +177,16 @@ const Pros = () => {
           <Image
             src="/clip.svg"
             alt="clip"
-            width={120}
-            height={120}
+            width={100}
+            height={100}
             ref={parallaxThree.ref}
           />
         </div>
         {handleProsItem({
           image: "/pros3.jpg",
-          mainText: "ЛУЧШЕЕ",
-          mainTextSub: "ОБОРУДОВАНИЕ",
-          paragraph:
-            "На протяжении многих лет SNS инвестировала в круглосуточное обучение и проживание, включая обширное новое академическое здание и реконструкцию общежитий, библиотеки, столовой и спортивных сооружений",
+          mainText: tPros("TEXT.2.MAIN"),
+          mainTextSub: tPros("TEXT.2.SUB"),
+          paragraph: tPros("TEXT.2.PARAGRAPH"),
           isLeft: true,
           color: "#C9A34B",
         })}
@@ -183,18 +194,17 @@ const Pros = () => {
           <Image
             src="/compass.svg"
             alt="compass"
-            width={120}
-            height={120}
+            width={100}
+            height={100}
             ref={parallaxFour.ref}
           />
         </div>
 
         {handleProsItem({
           image: "/pros4.jpg",
-          mainText: "ЛУЧШИЕ",
-          mainTextSub: "ВОЗМОЖНОСТИ",
-          paragraph:
-            "SNS является лидером в предоставлении возможностей, позволяющих обнаружить новые интересы или глубже погрузиться в давно сохраненные страсти. Преподаватели, тренеры, воспитатели общежития, деканы и консультанты тесно сотрудничают со студентами, направляя их опытами.",
+          mainText: tPros("TEXT.3.MAIN"),
+          mainTextSub: tPros("TEXT.3.SUB"),
+          paragraph: tPros("TEXT.3.PARAGRAPH"),
           isLeft: false,
           color: "#000000",
         })}

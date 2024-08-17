@@ -24,10 +24,11 @@
     }
   }
   &-content {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: contain;
-    height: 548px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     width: 100%;
   }
 }
