@@ -89,6 +89,12 @@ const Menu = ({ children }: any) => {
             alt="Flag RU"
             width={30}
             height={30}
+            onClick={() => {
+              window.open(
+                "https://api.whatsapp.com/send/?phone=77476553149&text&type=phone_number&app_absent=0",
+                "_blank"
+              );
+            }}
           />
         </div>
         <div className={styles["menu-top-button"]}>
