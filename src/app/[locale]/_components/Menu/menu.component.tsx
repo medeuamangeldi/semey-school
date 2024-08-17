@@ -6,6 +6,7 @@ import { Link, usePathname, useRouter } from "@/navigation";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import SimpleMap from "../Map/map.component";
+import { useState } from "react";
 
 const Menu = ({ children }: any) => {
   const locale = useLocale();
@@ -15,6 +16,12 @@ const Menu = ({ children }: any) => {
   const tRoutes = useTranslations("ROUTES");
   const tButtons = useTranslations("BUTTONS");
   const tFooter = useTranslations("FOOTER");
+
+  const [expanded, setExpanded] = useState(false);
+
+  const handleExpand = () => {
+    setExpanded(!expanded);
+  };
 
   const handleLocaleChange = (localeCode: any) => {
     router.replace(
@@ -73,14 +80,50 @@ const Menu = ({ children }: any) => {
             style={{
               cursor: "pointer",
             }}
+            onClick={handleExpand}
           >
             {" "}
             {tRoutes("ABOUT_SCHOOL")}{" "}
             <Image src="/arr-down.svg" alt="Search" width={10} height={10} />
+            {expanded && (
+              <div className={styles["menu-top-routes-dropdown"]}>
+                <Link href="/board"> {tRoutes("BOARD")} </Link>
+                <Link href="/sport"> {tRoutes("SPORT")} </Link>
+                <Link href="/food"> {tRoutes("FOOD")} </Link>
+                <Link href="/psychology"> {tRoutes("PSYCHOLOGY")} </Link>
+                <Link href="/discipline"> {tRoutes("DISCIPLINE")} </Link>
+                <Link href="/documents"> {tRoutes("DOCUMENTS")} </Link>
+                <Link href="/blog"> {tRoutes("BLOG")} </Link>
+              </div>
+            )}
           </div>
-          <Link href="/library"> {tRoutes("LIBRARY")} </Link>
-          <Link href="/grads"> {tRoutes("FOR_GRADS")} </Link>
-          <Link href="#contacts"> {tRoutes("CONTACTS")} </Link>
+          <Link
+            href="/library"
+            style={{
+              color: pathname === "/library" ? "#7F1222" : "black",
+            }}
+          >
+            {" "}
+            {tRoutes("LIBRARY")}{" "}
+          </Link>
+          <Link
+            href="/grads"
+            style={{
+              color: pathname === "/grads" ? "#7F1222" : "black",
+            }}
+          >
+            {" "}
+            {tRoutes("FOR_GRADS")}{" "}
+          </Link>
+          <Link
+            href="#contacts"
+            style={{
+              color: pathname === "/contacts" ? "#7F1222" : "black",
+            }}
+          >
+            {" "}
+            {tRoutes("CONTACTS")}{" "}
+          </Link>
         </div>
         <Image src="/vert-line.svg" alt="Search" width={1} height={65} />
         <div className={styles["menu-top-locales"]}>

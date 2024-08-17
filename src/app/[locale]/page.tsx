@@ -16,7 +16,7 @@ export default function Home() {
         return (
           <div className={styles["main-board-kz"]}>
             <Image
-              src={"/board-kz.jpg"}
+              src={"/board-kz.svg"}
               alt="Main board"
               width={1695}
               height={858.3}
@@ -28,7 +28,7 @@ export default function Home() {
         return (
           <div className={styles["main-board-ru"]}>
             <Image
-              src={"/board-ru.jpg"}
+              src={"/board-ru.svg"}
               alt="Main board"
               width={1695}
               height={858.3}
