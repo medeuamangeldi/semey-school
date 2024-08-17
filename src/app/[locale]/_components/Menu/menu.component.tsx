@@ -1,9 +1,8 @@
 "use client";
-import Link from "next/link";
 import { useLocale } from "next-intl";
 import styles from "./menu.module.scss";
 import Image from "next/image";
-import { usePathname, useRouter } from "@/navigation";
+import { Link, usePathname, useRouter } from "@/navigation";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import SimpleMap from "../Map/map.component";
@@ -28,16 +27,60 @@ const Menu = ({ children }: any) => {
   return (
     <div className={styles["menu"]}>
       <div className={styles["menu-top"]}>
-        <div className={styles["menu-top-logo"]}>
-          <Image src="/Logo.svg" alt="Logo" width={97} height={109} />
-          <Image src="/Logo-text.svg" alt="Logo" width={192} height={78} />
+        <div
+          className={styles["menu-top-logo"]}
+          onClick={() => {
+            router.push("/");
+          }}
+          style={{
+            cursor: "pointer",
+          }}
+        >
+          <Image
+            src="/Logo.svg"
+            alt="Logo"
+            width={97}
+            height={109}
+            layout="responsive"
+            style={{
+              maxWidth: "97px",
+              maxHeight: "109px",
+            }}
+          />
+          <Image
+            src="/Logo-text.svg"
+            alt="Logo"
+            width={192}
+            height={78}
+            layout="responsive"
+            style={{
+              maxWidth: "192px",
+              maxHeight: "78px",
+            }}
+          />
         </div>
         <div className={styles["menu-top-routes"]}>
-          <Link href="/"> {tRoutes("MISSION")} </Link>
-          <Link href="/about"> {tRoutes("ABOUT_SCHOOL")} </Link>
+          <Link
+            href="/mission"
+            style={{
+              color: pathname === "/mission" ? "#7F1222" : "black",
+            }}
+          >
+            {" "}
+            {tRoutes("MISSION")}{" "}
+          </Link>
+          <div
+            style={{
+              cursor: "pointer",
+            }}
+          >
+            {" "}
+            {tRoutes("ABOUT_SCHOOL")}{" "}
+            <Image src="/arr-down.svg" alt="Search" width={10} height={10} />
+          </div>
           <Link href="/library"> {tRoutes("LIBRARY")} </Link>
           <Link href="/grads"> {tRoutes("FOR_GRADS")} </Link>
-          <Link href="/contacts"> {tRoutes("CONTACTS")} </Link>
+          <Link href="#contacts"> {tRoutes("CONTACTS")} </Link>
         </div>
         <Image src="/vert-line.svg" alt="Search" width={1} height={65} />
         <div className={styles["menu-top-locales"]}>
@@ -110,7 +153,7 @@ const Menu = ({ children }: any) => {
           <SimpleMap />
         </div>
         <div className={styles["footer-contacts"]}>
-          <div className={styles["footer-contacts-title"]}>
+          <div className={styles["footer-contacts-title"]} id="contacts">
             {tFooter("TITLE")}
           </div>
           <div className={styles["footer-contacts-content"]}>
