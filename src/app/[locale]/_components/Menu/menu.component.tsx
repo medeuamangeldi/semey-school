@@ -157,6 +157,9 @@ const Menu = ({ children }: any) => {
             alt="Flag RU"
             width={30}
             height={30}
+            onClick={() => {
+              window.open("https://t.me/+77476553149", "_blank");
+            }}
           />
           <Image
             style={{
@@ -166,6 +169,12 @@ const Menu = ({ children }: any) => {
             alt="Flag RU"
             width={30}
             height={30}
+            onClick={() => {
+              window.open(
+                "https://www.instagram.com/sns_semey?igsh=YmF6b3dlcGZsOHli",
+                "_blank"
+              );
+            }}
           />
           <Image
             style={{
@@ -185,7 +194,15 @@ const Menu = ({ children }: any) => {
         </div>
         <div className={styles["menu-top-button"]}>
           {" "}
-          <div className={styles["menu-top-button-text"]}>
+          <div
+            className={styles["menu-top-button-text"]}
+            onClick={() => {
+              window.open(
+                "https://api.whatsapp.com/send/?phone=77476553149&text&type=phone_number&app_absent=0",
+                "_blank"
+              );
+            }}
+          >
             {tButtons("BOOK_A_TOUR")}
           </div>
         </div>
@@ -210,10 +227,26 @@ const Menu = ({ children }: any) => {
               {tFooter("PHONE")}
             </div>
             <div className={styles["footer-contacts-content-buttons"]}>
-              <div className={styles["footer-contacts-content-buttons-button"]}>
+              <div
+                className={styles["footer-contacts-content-buttons-button"]}
+                onClick={() => {
+                  window.open(
+                    "https://api.whatsapp.com/send/?phone=77476553149&text&type=phone_number&app_absent=0",
+                    "_blank"
+                  );
+                }}
+              >
                 {tButtons("BOOK_A_TOUR")}
               </div>
-              <div className={styles["footer-contacts-content-buttons-button"]}>
+              <div
+                className={styles["footer-contacts-content-buttons-button"]}
+                onClick={() => {
+                  window.open(
+                    "https://2gis.kz/semey/firm/70000001063812740",
+                    "_blank"
+                  );
+                }}
+              >
                 {tFooter("2GIS")}
               </div>
             </div>

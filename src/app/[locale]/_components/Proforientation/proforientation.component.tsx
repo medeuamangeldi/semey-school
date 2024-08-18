@@ -77,6 +77,13 @@ const Proforientation = () => {
           style={{
             maxHeight: "861px",
             maxWidth: "1679px",
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            window.open(
+              "https://api.whatsapp.com/send/?phone=77476553149&text&type=phone_number&app_absent=0",
+              "_blank"
+            );
           }}
         />
       </div>
