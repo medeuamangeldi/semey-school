@@ -6,16 +6,16 @@ import { useParallax } from "react-scroll-parallax";
 const Pros = () => {
   const tPros = useTranslations("PROS");
   const parallax: any = useParallax({
-    rotate: [270, 360],
+    rotate: [210, 360],
   });
   const parallaxTwo: any = useParallax({
-    rotate: [270, 360],
+    rotate: [210, 360],
   });
   const parallaxThree: any = useParallax({
-    rotate: [270, 360],
+    rotate: [210, 360],
   });
   const parallaxFour: any = useParallax({
-    rotate: [270, 360],
+    rotate: [210, 360],
   });
   const handleProsItem = ({
     image,
@@ -35,9 +35,7 @@ const Pros = () => {
     return isLeft ? (
       <div className={styles["pros-container-content-text-left"]}>
         <div className={styles["pros-container-content-text-left-text"]}>
-          <span
-            className={styles["pros-container-content-text-left-text-main"]}
-          >
+          <div className={styles["pros-container-content-text-left-text-main"]}>
             <div
               className={
                 styles["pros-container-content-text-left-text-main-title"]
@@ -55,7 +53,7 @@ const Pros = () => {
             >
               {mainTextSub}
             </span>
-          </span>
+          </div>
           <div>
             <br /> <br />{" "}
           </div>
@@ -97,7 +95,7 @@ const Pros = () => {
           />
         </div>
         <div className={styles["pros-container-content-text-right-text"]}>
-          <span
+          <div
             className={styles["pros-container-content-text-right-text-main"]}
           >
             <div
@@ -117,7 +115,7 @@ const Pros = () => {
             >
               {mainTextSub}
             </span>
-          </span>
+          </div>
           <div>
             <br /> <br />{" "}
           </div>

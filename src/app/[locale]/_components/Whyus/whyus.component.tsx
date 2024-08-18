@@ -7,10 +7,10 @@ const Whyus = () => {
   const locale = useLocale();
   return (
     <div className={styles["whyus"]}>
-      <span className={styles["whyus-title-fixed"]}>
+      <div className={styles["whyus-title-fixed"]}>
         {tWhyus("TITLE")}
         <span>{tWhyus("TITLE")}</span>
-      </span>
+      </div>
       <div className={styles["whyus-content"]}>
         <Image
           src={`/whyus-bg-${locale}.jpg`}

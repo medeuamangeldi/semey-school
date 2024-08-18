@@ -124,18 +124,162 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-left: 100px;
-  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
 }
 
 .right-animated {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-right: 100px;
-  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+@media (max-width: 920px) {
+  .pros-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 0 12px;
+    &-title {
+      &-fixed {
+        position: relative;
+        color: white;
+        font-size: 32px;
+        font-weight: 900;
+        /* We need double the stroke width because half of it gets covered up */
+        -webkit-text-stroke: 4px #7e1322;
+      }
+      /* Place the second copy of the text over top of the first */
+      &-fixed span {
+        position: absolute;
+        left: 0;
+        -webkit-text-stroke: 0;
+        pointer-events: none;
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      &-text-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        height: 100%;
+        &-text {
+          padding: 20px 0;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          &-main {
+            text-align: center;
+            &-title {
+              font-size: 21px;
+              font-weight: 600;
+              text-align: center;
+              overflow-wrap: break-word;
+              max-width: 400px;
+            }
+            &-sub {
+              font-size: 21px;
+              font-weight: 600;
+              color: white;
+              border-radius: 28px;
+              padding: 0 10px;
+              text-align: right;
+              width: fit-content;
+            }
+          }
+          &-paragraph {
+            font-size: 18px;
+            height: 100%;
+          }
+        }
+        &-content {
+          width: 100%;
+        }
+      }
+      &-text-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        height: 100%;
+        &-text {
+          padding: 20px 0;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          &-main {
+            text-align: center;
+            width: 100%;
+            &-title {
+              font-size: 21px;
+              font-weight: 600;
+              text-align: center;
+              overflow-wrap: break-word;
+              max-width: 400px;
+              text-align: center;
+            }
+            &-sub {
+              font-size: 21px;
+              font-weight: 600;
+              border-radius: 28px;
+              padding: 0 10px;
+              text-align: center;
+              width: 100%;
+            }
+          }
+          &-paragraph {
+            font-size: 18px;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+          }
+        }
+        &-content {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .left-animated {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .right-animated {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
 }

@@ -40,6 +40,21 @@ const Photogallery = () => {
           }}
           layout="responsive"
           onClick={handleLeftClick}
+          className={styles["photogallery-content-arrow-old"]}
+        />
+        <Image
+          src="/arrow-left.svg"
+          alt="Photogallery"
+          width={50}
+          height={50}
+          style={{
+            maxHeight: "20px",
+            maxWidth: "20px",
+            cursor: "pointer",
+          }}
+          layout="responsive"
+          onClick={handleLeftClick}
+          className={styles["photogallery-content-arrow-new"]}
         />
         <Image
           src={`/photo${photoId}.svg`}
@@ -55,6 +70,20 @@ const Photogallery = () => {
         <Image
           src="/arrow-right.svg"
           alt="Photogallery"
+          width={10}
+          height={10}
+          style={{
+            maxHeight: "20px",
+            maxWidth: "20px",
+            cursor: "pointer",
+          }}
+          layout="responsive"
+          onClick={handleLeftClick}
+          className={styles["photogallery-content-arrow-new"]}
+        />
+        <Image
+          src="/arrow-right.svg"
+          alt="Photogallery"
           width={50}
           height={50}
           style={{
@@ -64,6 +93,7 @@ const Photogallery = () => {
           }}
           layout="responsive"
           onClick={handleRightClick}
+          className={styles["photogallery-content-arrow-old"]}
         />
       </div>
     </div>

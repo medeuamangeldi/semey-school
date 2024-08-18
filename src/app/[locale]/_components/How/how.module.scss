@@ -41,3 +41,49 @@
     }
   }
 }
+
+@media (max-width: 920px) {
+  .how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+
+    &-title {
+      &-fixed {
+        position: relative;
+        color: white;
+        font-size: 28px;
+        font-weight: 900;
+        /* We need double the stroke width because half of it gets covered up */
+        -webkit-text-stroke: 4px #7e1322;
+      }
+      /* Place the second copy of the text over top of the first */
+      &-fixed span {
+        position: absolute;
+        left: 0;
+        -webkit-text-stroke: 0;
+        pointer-events: none;
+      }
+    }
+    &-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      &-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        max-height: "315px";
+      }
+    }
+  }
+}
