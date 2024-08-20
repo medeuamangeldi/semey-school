@@ -37,15 +37,23 @@ export default function Home() {
           </div>
         );
       default:
-        return <div className={styles["main-board-kz"]}></div>;
+        return (
+          <div className={styles["main-board-en"]}>
+            <Image
+              src={"/board-en.svg"}
+              alt="Main board"
+              width={1695}
+              height={858.3}
+              layout="responsive"
+            />
+          </div>
+        );
     }
   };
   return (
     <main className={styles["main"]}>
       {handleBoardByLocale()}
-      <ParallaxProvider>
-        <Pros />
-      </ParallaxProvider>
+      <Pros />
       <Whyus />
       <Proforientation />
       <Photogallery />

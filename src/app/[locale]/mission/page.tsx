@@ -1,7 +1,7 @@
+"use client";
 import styles from "./page.module.scss";
-
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 const Mission = () => {
   const tMission = useTranslations("MISSION");

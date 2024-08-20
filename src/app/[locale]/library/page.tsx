@@ -45,9 +45,6 @@ const Library = () => {
             <div className={styles["library-grid-row-item-title"]}>
               {tLibrary("MATH")}
             </div>
-            <div className={styles["library-grid-row-item-description"]}>
-              {tLibrary("SIX_TO_11")}
-            </div>
           </div>
 
           <div className={styles["library-grid-row-item"]}>
@@ -63,9 +60,6 @@ const Library = () => {
             </div>
             <div className={styles["library-grid-row-item-title"]}>
               {tLibrary("RUSSIAN")}
-            </div>
-            <div className={styles["library-grid-row-item-description"]}>
-              {tLibrary("ONE_TO_11")}
             </div>
           </div>
 
@@ -83,11 +77,7 @@ const Library = () => {
             <div className={styles["library-grid-row-item-title"]}>
               {tLibrary("KAZAKH")}
             </div>
-            <div className={styles["library-grid-row-item-description"]}>
-              {tLibrary("ONE_TO_11")}
-            </div>
           </div>
-
           <div className={styles["library-grid-row-item"]}>
             <div className={styles["library-grid-row-item-image"]}>
               <Image
@@ -101,9 +91,6 @@ const Library = () => {
             </div>
             <div className={styles["library-grid-row-item-title"]}>
               {tLibrary("GEOGRAPHY")}
-            </div>
-            <div className={styles["library-grid-row-item-description"]}>
-              {tLibrary("SIX_TO_11")}
             </div>
           </div>
         </div>
@@ -123,9 +110,6 @@ const Library = () => {
             <div className={styles["library-grid-row-item-title"]}>
               {tLibrary("BIOLOGY")}
             </div>
-            <div className={styles["library-grid-row-item-description"]}>
-              {tLibrary("SIX_TO_11")}
-            </div>
           </div>
 
           <div className={styles["library-grid-row-item"]}>
@@ -141,9 +125,6 @@ const Library = () => {
             </div>
             <div className={styles["library-grid-row-item-title"]}>
               {tLibrary("CHEMISTRY")}
-            </div>
-            <div className={styles["library-grid-row-item-description"]}>
-              {tLibrary("SIX_TO_11")}
             </div>
           </div>
 
@@ -161,9 +142,6 @@ const Library = () => {
             <div className={styles["library-grid-row-item-title"]}>
               {tLibrary("PHYSICS")}
             </div>
-            <div className={styles["library-grid-row-item-description"]}>
-              {tLibrary("SIX_TO_11")}
-            </div>
           </div>
 
           <div className={styles["library-grid-row-item"]}>
@@ -179,9 +157,6 @@ const Library = () => {
             </div>
             <div className={styles["library-grid-row-item-title"]}>
               {tLibrary("INFORMATICS")}
-            </div>
-            <div className={styles["library-grid-row-item-description"]}>
-              {tLibrary("SIX_TO_11")}
             </div>
           </div>
         </div>
@@ -201,9 +176,6 @@ const Library = () => {
             <div className={styles["library-grid-row-item-title"]}>
               {tLibrary("ENGLISH")}
             </div>
-            <div className={styles["library-grid-row-item-description"]}>
-              {tLibrary("TWO_TO_11")}
-            </div>
           </div>
 
           <div className={styles["library-grid-row-item"]}>
@@ -220,8 +192,20 @@ const Library = () => {
             <div className={styles["library-grid-row-item-title"]}>
               {tLibrary("HISTORY")}
             </div>
-            <div className={styles["library-grid-row-item-description"]}>
-              {tLibrary("SIX_TO_11")}
+          </div>
+          <div className={styles["library-grid-row-item"]}>
+            <div className={styles["library-grid-row-item-image"]}>
+              <Image
+                src="/russian.svg"
+                alt="library"
+                width={294}
+                height={182}
+                layout="responsive"
+                style={{ maxWidth: "294px", maxHeight: "182px" }}
+              />
+            </div>
+            <div className={styles["library-grid-row-item-title"]}>
+              {tLibrary("ADD_EDUCATION")}
             </div>
           </div>
         </div>

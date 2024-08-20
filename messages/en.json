@@ -1,0 +1,168 @@
+{
+  "ROUTES": {
+    "MISSION": "Mission",
+    "ABOUT_SCHOOL": "About school",
+    "LIBRARY": "Library",
+    "FOR_GRADS": "For grads",
+    "CONTACTS": "Contacts",
+    "BOARD": "Admission board",
+    "SPORT": "Schedule of clubs and sports sections",
+    "FOOD": "School meals",
+    "PSYCHOLOGY": "Psychologist's Page",
+    "DISCIPLINE": "Educational work",
+    "DOCUMENTS": "Regulatory documents",
+    "BLOG": "Director's Blog"
+  },
+  "BUTTONS": {
+    "BOOK_A_TOUR": "Sign up for a tour"
+  },
+  "PROS": {
+    "TITLE": "ADVANTAGES",
+    "TEXT": [
+      {
+        "MAIN": "IMPROVE YOUR ACADEMIC",
+        "SUB": "POTENTIAL",
+        "PARAGRAPH": "Talented teachers, high academic standards and leadership development in a blended environment are the hallmarks of an education at Semey New School."
+      },
+      {
+        "MAIN": "LEADING",
+        "SUB": "FACULTY",
+        "PARAGRAPH": "SNS faculty are diverse and leaders in their fields - and committed to the school's mission to make a positive difference in the world."
+      },
+      {
+        "MAIN": "BEST",
+        "SUB": "FACILITIES",
+        "PARAGRAPH": "Over the years, SNS has invested in 24-hour learning and living experiences, including an expansive new academic building and renovations to the residence halls, library, dining hall, and athletic facilities."
+      },
+      {
+        "MAIN": "BEST",
+        "SUB": "OPPORTUNITIES",
+        "PARAGRAPH": "SNS is a leader in providing opportunities to discover new interests or dive deeper into long-held passions. Faculty, coaches, residence counselors, deans, and advisors work closely with students to guide them through their experiences."
+      }
+    ]
+  },
+  "WHYUS": {
+    "TITLE": "WHY US?"
+  },
+  "PROFORIENTATION": {
+    "TITLE": "PROFORIENTATION",
+    "TEXT": [
+      "Our school pays special attention to career guidance.",
+      "With our students, we analyze the types of professions and educational programs for the chosen professions.",
+      "With the help of special tests, we find out which profession is suitable for the student.",
+      "We show in which Kazakh or foreign educational institutions you can master the chosen profession.",
+      "We consider the features of each profession and help them find a job they like."
+    ]
+  },
+  "PHOTOGALLERY": {
+    "TITLE": "PHOTO GALLERY"
+  },
+  "HOW": {
+    "TITLE": "TRAINING"
+  },
+  "FOOTER": {
+    "TITLE": "CONTACTS",
+    "ADDRESS": "Semey, Baiseitova St., 5",
+    "HOURS": "Working hours: from 9.00 to 17.00",
+    "PHONE": "Phone: +7 (747)-655-3149",
+    "2GIS": "Go to 2Gis"
+  },
+  "MISSION": {
+    "TITLE": "Mission and Values",
+    "PARAGRAPH_TITLE": "Our Mission",
+    "SUBTITLE": "Strengthening Potential: Empowering Minds for a Changing World",
+    "TEXT": "Our school strives to create a dynamic learning environment where every student has the opportunity to reach their full potential by developing critical thinking, creativity and compassion to thrive in a rapidly changing world.",
+    "VALUES_TITLE": "Our Values",
+    "VALUES": [
+      {
+        "TITLE": "Excellence",
+        "TEXT": "Striving for the highest standards of achievement in academics, character and personal growth."
+      },
+      {
+        "TITLE": "Inclusiveness",
+        "TEXT": "Embracing diversity and creating a welcoming environment where every individual feels valued and respected."
+      },
+      {
+        "TITLE": "Integrity",
+        "TEXT": "Maintaining integrity, ethics, and moral principles in all actions and decisions."
+      },
+      {
+        "TITLE": "Collaboration",
+        "TEXT": "Encouraging teamwork and collaboration among students, staff, parents, and the broader community to achieve common goals."
+      },
+      {
+        "TITLE": "Innovation",
+        "TEXT": "Embracing creativity, curiosity, and adaptability to create a culture of continuous improvement and exploration."
+      },
+      {
+        "TITLE": "Resilience",
+        "TEXT": "Fostering perseverance, willpower, and a positive mindset to overcome adversity and bounce back from setbacks."
+      },
+      {
+        "TITLE": "Service",
+        "TEXT": "Fostering a spirit of giving and creating a positive impact on the local and global community through acts of kindness and service."
+      },
+      {
+        "TITLE": "Empowerment",
+        "TEXT": "Empowering students to take ownership of their learning, make informed decisions, and become leaders."
+      }
+    ]
+  },
+  "BOARD": {
+    "TITLE": "Admissions Committee",
+    "SUBTITLE": "In order to enroll in Semey New School, you need to collect certain documents:",
+    "ITEMS": [
+      "Child's birth certificate",
+      "Grade report from the previous school (if any)",
+      "Medical certificate No. 72"
+    ]
+  },
+  "SPORT": {
+    "TITLE": "Schedule of clubs and sports sections",
+    "SUBTITLE": "Up-to-date data will be provided on September 1"
+  },
+  "FOOD": {
+    "TITLE": "School meals",
+    "SUBTITLE": "Up-to-date data will be provided on September 1"
+  },
+  "PSYCHOLOGY": {
+    "TITLE": "Psychologist's page",
+    "SUBTITLE": "Up-to-date data will be provided on September 1"
+  },
+  "DISCIPLINE": {
+    "TITLE": "Educational work",
+    "SUBTITLE": "Up-to-date data will be provided on September 1"
+  },
+  "DOCUMENTS": {
+    "TITLE": "Regulatory documents",
+    "SUBTITLE": "Up-to-date data will be provided on September 1"
+  },
+  "BLOG": {
+    "TITLE": "Director's blog",
+    "SUBTITLE": "Up-to-date data will be provided on September 1"
+  },
+  "GRADS": {
+    "TITLE": "For graduates",
+    "SUBTITLE": "Up-to-date data will be provided on September 1"
+  },
+  "LIBRARY": {
+    "TITLE": "Electronic library",
+    "SEARCH": "Search",
+    "FIND": "Find",
+    "MATH": "Mathematics",
+    "RUSSIAN": "Russian language",
+    "KAZAKH": "Kazakh language",
+    "GEOGRAPHY": "Geography",
+    "BIOLOGY": "Biology",
+    "CHEMISTRY": "Chemistry",
+    "PHYSICS": "Physics",
+    "INFORMATICS": "Computer Science",
+    "ENGLISH": "English Language",
+    "HISTORY": "History",
+    "ADD_EDUCATION": "Additional Education",
+    "ONE_TO_11": "Grades 1-11",
+    "TWO_TO_11": "Grades 2-11",
+    "SIX_TO_11": "Grades 6-11",
+    "REQUEST_BOOK": "Request a Book"
+  }
+}

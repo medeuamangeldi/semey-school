@@ -7,6 +7,7 @@ import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import SimpleMap from "../Map/map.component";
 import { useState } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const Menu = ({ children }: any) => {
   const locale = useLocale();
@@ -49,23 +50,23 @@ const Menu = ({ children }: any) => {
             src="/Logo.svg"
             alt="Logo"
             width={97}
-            height={109}
+            height={79}
             layout="responsive"
             style={{
-              maxWidth: "97px",
-              maxHeight: "109px",
+              maxWidth: "87px",
+              maxHeight: "89px",
               zIndex: 999,
             }}
           />
           <Image
             src="/Logo-text.svg"
             alt="Logo"
-            width={192}
+            width={172}
             height={78}
             layout="responsive"
             style={{
-              maxWidth: "192px",
-              maxHeight: "78px",
+              maxWidth: "172px",
+              maxHeight: "68px",
               zIndex: 999,
             }}
           />
@@ -145,6 +146,15 @@ const Menu = ({ children }: any) => {
             }}
           >
             ҚАЗ
+          </span>
+          <span
+            onClick={() => handleLocaleChange("en")}
+            style={{
+              color: locale === "en" ? "black" : "#727272",
+              cursor: "pointer",
+            }}
+          >
+            EN
           </span>
           <span
             onClick={() => handleLocaleChange("ru")}
@@ -377,6 +387,15 @@ const Menu = ({ children }: any) => {
                   ҚАЗ
                 </span>
                 <span
+                  onClick={() => handleLocaleChange("en")}
+                  style={{
+                    color: locale === "en" ? "black" : "#727272",
+                    cursor: "pointer",
+                  }}
+                >
+                  EN
+                </span>
+                <span
                   onClick={() => handleLocaleChange("ru")}
                   style={{
                     color: locale === "ru" ? "black" : "#727272",
@@ -450,7 +469,7 @@ const Menu = ({ children }: any) => {
           )}
         </div>
       </div>
-      {children}
+      <ParallaxProvider>{children}</ParallaxProvider>
       <div className={styles["footer"]}>
         <div className={styles["footer-map"]}>
           <SimpleMap />
