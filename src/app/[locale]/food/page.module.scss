@@ -1,26 +1,87 @@
-.food {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
-  padding: 0 20px;
-  gap: 40px;
-
-  &-title {
-    font-size: 60px;
-    font-weight: 700;
-    color: rgb(28, 27, 27);
+@media (min-width: 1150px) {
+  .food {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
     width: 100%;
-    text-align: center;
-    padding: 20px;
-  }
+    padding: 0 20px;
+    gap: 40px;
 
-  &-subtitle {
-    font-size: 28px;
-    font-weight: 500;
-    color: rgb(28, 27, 27);
-    padding: 20px;
+    &-title {
+      font-size: 60px;
+      font-weight: 700;
+      color: rgb(28, 27, 27);
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    &-subtitle {
+      font-size: 28px;
+      font-weight: 500;
+      color: rgb(28, 27, 27);
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 1150px) and (min-width: 920px) {
+  .food {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 20px;
+    gap: 20px;
+
+    &-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: rgb(28, 27, 27);
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    &-subtitle {
+      font-size: 22px;
+      font-weight: 500;
+      color: rgb(28, 27, 27);
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .food {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+    padding: 0 20px;
+    gap: 20px;
+
+    &-title {
+      font-size: 21px;
+      font-weight: 700;
+      color: rgb(28, 27, 27);
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    &-subtitle {
+      font-size: 16px;
+      font-weight: 500;
+      color: rgb(28, 27, 27);
+      padding: 20px;
+      text-align: left;
+    }
   }
 }
