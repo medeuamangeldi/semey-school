@@ -6,16 +6,16 @@ import { useParallax } from "react-scroll-parallax";
 const Pros = () => {
   const tPros = useTranslations("PROS");
   const parallax: any = useParallax({
-    rotate: [210, 360],
+    rotate: [270, 360],
   });
   const parallaxTwo: any = useParallax({
-    rotate: [210, 360],
+    rotate: [270, 360],
   });
   const parallaxThree: any = useParallax({
-    rotate: [210, 360],
+    rotate: [270, 360],
   });
   const parallaxFour: any = useParallax({
-    rotate: [210, 360],
+    rotate: [270, 360],
   });
   const handleProsItem = ({
     image,
@@ -141,8 +141,8 @@ const Pros = () => {
           <Image
             src="/pencil.svg"
             alt="pencil"
-            width={100}
-            height={100}
+            width={60}
+            height={60}
             ref={parallax.ref}
           />
         </div>
@@ -158,8 +158,8 @@ const Pros = () => {
           <Image
             src="/portfolio.svg"
             alt="portfolio"
-            width={100}
-            height={100}
+            width={60}
+            height={60}
             ref={parallaxTwo.ref}
           />
         </div>
@@ -175,8 +175,8 @@ const Pros = () => {
           <Image
             src="/clip.svg"
             alt="clip"
-            width={100}
-            height={100}
+            width={60}
+            height={60}
             ref={parallaxThree.ref}
           />
         </div>
@@ -192,8 +192,8 @@ const Pros = () => {
           <Image
             src="/compass.svg"
             alt="compass"
-            width={100}
-            height={100}
+            width={60}
+            height={60}
             ref={parallaxFour.ref}
           />
         </div>
