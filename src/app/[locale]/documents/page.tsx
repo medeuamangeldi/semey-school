@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 import styles from "./page.module.scss";
-
 import Image from "next/image";
 
 const Documents = () => {
@@ -20,7 +19,30 @@ const Documents = () => {
       />
       <div className={styles["documents-title"]}>{tDocuments("TITLE")}</div>
       <div className={styles["documents-subtitle"]}>
-        {tDocuments("SUBTITLE")}
+        <a
+          style={{
+            color: "blue",
+            textDecoration: "underline",
+            fontWeight: "bold",
+            wordBreak: "break-all",
+          }}
+          href="/law.docx"
+        >
+          {tDocuments("LAW")}
+        </a>
+      </div>
+      <div className={styles["documents-subtitle"]}>
+        <a
+          style={{
+            color: "blue",
+            textDecoration: "underline",
+            fontWeight: "bold",
+            wordBreak: "break-all",
+          }}
+          href="/passport.docx"
+        >
+          {tDocuments("PASSPORT")}
+        </a>
       </div>
     </div>
   );

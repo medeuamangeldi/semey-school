@@ -19,7 +19,19 @@ const Grads = () => {
         }}
       />
       <div className={styles["grads-title"]}>{tGrads("TITLE")}</div>
-      <div className={styles["grads-subtitle"]}>{tGrads("SUBTITLE")}</div>
+      <div className={styles["documents-subtitle"]}>
+        <a
+          style={{
+            color: "blue",
+            textDecoration: "underline",
+            fontWeight: "bold",
+            wordBreak: "break-all",
+          }}
+          href="/ent.docx"
+        >
+          {tGrads("ENT")}
+        </a>
+      </div>
     </div>
   );
 };

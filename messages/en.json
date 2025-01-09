@@ -135,7 +135,9 @@
   },
   "DOCUMENTS": {
     "TITLE": "Regulatory documents",
-    "SUBTITLE": "Up-to-date data will be provided on September 1"
+    "SUBTITLE": "Up-to-date data will be provided on September 1",
+    "LAW": "Law of the Republic of Kazakhstan dated July 27, 2007 No. 319 III On Education",
+    "PASSPORT": "School passport"
   },
   "BLOG": {
     "TITLE": "Director's blog",
@@ -143,7 +145,8 @@
   },
   "GRADS": {
     "TITLE": "For graduates",
-    "SUBTITLE": "Up-to-date data will be provided on September 1"
+    "SUBTITLE": "Up-to-date data will be provided on September 1",
+    "ENT": "Unified National Testing"
   },
   "LIBRARY": {
     "TITLE": "Electronic library",
